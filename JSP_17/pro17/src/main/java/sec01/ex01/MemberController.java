@@ -30,7 +30,8 @@ public class MemberController extends HttpServlet {
 		doHandle(request, response);
 	}
 
-	private void doHandle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	private void doHandle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html;charset=UTF-8");
 		List<MemberVO> membersList = memberDAO.listMembers();

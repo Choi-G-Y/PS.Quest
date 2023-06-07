@@ -1,4 +1,4 @@
-package sec01.ex01;
+package sec02.ex01;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -27,16 +27,16 @@ public class MemberDAO {
 		}
 	}
 
+	
 	public List<MemberVO> listMembers() {
-		List<MemberVO> membersList = new ArrayList<MemberVO>();
+		List<MemberVO>  membersList = new ArrayList<MemberVO>();
 		try {
 			conn = dataFactory.getConnection();
 			String query = "select * from  t_member order by joinDate desc";
 			System.out.println(query);
 			pstmt = conn.prepareStatement(query);
 			ResultSet rs = pstmt.executeQuery();
-			while (rs.next()) 
-			{
+			while (rs.next()) {
 				String id = rs.getString("id");
 				String pwd = rs.getString("pwd");
 				String name = rs.getString("name");
@@ -45,6 +45,7 @@ public class MemberDAO {
 				MemberVO memberVO = new MemberVO(id, pwd, name, email, joinDate);
 				membersList.add(memberVO);
 			}
+			
 			rs.close();
 			pstmt.close();
 			conn.close();
@@ -54,6 +55,7 @@ public class MemberDAO {
 		return membersList;
 	}
 
+	
 	public void addMember(MemberVO m) {
 		try {
 			conn = dataFactory.getConnection();
@@ -71,8 +73,7 @@ public class MemberDAO {
 			pstmt.executeUpdate();
 			pstmt.close();
 			conn.close();
-		} catch (SQLException e) 
-		{
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
