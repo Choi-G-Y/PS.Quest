@@ -37,6 +37,8 @@ public class BoardDAO {
 			System.out.println(query);
 			pstmt = conn.prepareStatement(query);
 			ResultSet rs = pstmt.executeQuery();
+			
+			
 			while (rs.next()) {
 				int level = rs.getInt("level");
 				int articleNO = rs.getInt("articleNO");
@@ -56,11 +58,14 @@ public class BoardDAO {
 				articlesList.add(article);
 			}
 			rs.close();
+			
 			pstmt.close();
+			
 			conn.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 		return articlesList;
 	}
 }

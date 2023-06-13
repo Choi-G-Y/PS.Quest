@@ -1,4 +1,4 @@
-package sec03.brd01;
+package sec03.brd04;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -8,12 +8,10 @@ public class ArticleVO {
 	private int level;
 	private int articleNO;
 	private int parentNO;
-	
 	private String title;
 	private String content;
 	private String imageFileName;
 	private String id;
-	
 	private Date writeDate;
 	
 	public ArticleVO() {
@@ -23,6 +21,7 @@ public class ArticleVO {
 
 	public ArticleVO(int level, int articleNO, int parentNO, String title, String content, String imageFileName,
 			String id) {
+		super();
 		this.level = level;
 		this.articleNO = articleNO;
 		this.parentNO = parentNO;
@@ -93,7 +92,9 @@ public class ArticleVO {
 
 	public void setImageFileName(String imageFileName) {
 		try {
-			this.imageFileName = URLEncoder.encode(imageFileName, "UTF-8");//ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Úµï¿½ï¿½Õ´Ï´ï¿½.
+			if(imageFileName!=null && imageFileName.length()!=0) {
+				this.imageFileName = URLEncoder.encode(imageFileName, "UTF-8");  //ÆÄÀÏÀÌ¸§¿¡ Æ¯¼ö¹®ÀÚ°¡ ÀÖÀ» °æ¿ì ÀÎÄÚµùÇÕ´Ï´Ù.
+			}
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
