@@ -1,14 +1,44 @@
-
+/* body전체 적용 되는 속성
 body {
-    background: url(./imgsrc/상근이.jpg) repeat-x 200px 450px fixed;
+    background: url(./imgsrc/상근이.jpg) no-repeat 300px 450px fixed;
 
+} */
+
+h1 {
+    color: burlywood;
 }
-p {
-    color: #427068;
-    text-decoration:none; 
-    font-weight: bold;
-}
+
 
 .blue {
     color: blue;
+}
+/* 글 시작되는 방향 */
+.direction {
+    direction: rtl;
+}
+/* 텍스트간 거리 */
+.dLS {
+    letter-spacing:  19px;
+}
+/* 들여쓰기 */
+.indent {
+    text-indent: 40px;
+}
+/* 데코레이션기능 overline(under),line-through, none */
+.deco {
+    text-decoration: line-through;
+}
+/* text transform 속성으로 글자 상태변환 text-transform: uppercase(대문자),lower(소문자),capitalize(첫글자만 대문자)  */
+.txtct {
+    text-transform: capitalize;
+}
+.txtup {
+    text-transform: uppercase;
+}
+.txtlw {
+    text-transform: lowercase;
+}
+
+.shadow {
+    text-shadow: 4px 2px darkblue;
 }
