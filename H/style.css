@@ -1,0 +1,14 @@
+
+body {
+    background: url(./imgsrc/상근이.jpg) repeat-x 200px 450px fixed;
+
+}
+p {
+    color: #427068;
+    text-decoration:none; 
+    font-weight: bold;
+}
+
+.blue {
+    color: blue;
+}
