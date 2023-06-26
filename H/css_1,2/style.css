@@ -89,3 +89,47 @@ h1 {
     text-align: center;
 }
 
+table {
+    border-collapse: separate;
+}
+
+th, td{
+    padding: 10px;
+    border-bottom: 2px solid orangered;
+    border-right: 2px solid orangered;
+    
+}
+/* td, th에 hover 기능 */
+td:hover {background-color: grey;}
+th:hover {background-color: grey;}
+
+/* tr에서 n번째 줄마다 원하는 효과 부여 홀수는 odd, 짝수는 even*/
+tr:nth-child(odd) { background-color: #F3F3F3; }
+
+/* 이미지 스프라이트 연습용 */
+.up, .down, .right, .left {
+    background: url("./img_image_sprites.png")
+}
+
+.up{
+    width: 21px;
+    height: 20px;
+}
+
+.down{
+    width: 21px;
+    height: 20px;
+    background-position: -21px 0;
+}
+
+.right{
+    width: 21px;
+    height: 20px;
+    background-position: -42px 0;
+}
+
+.left{
+    width: 21px;
+    height: 20px;
+    background-position: -65px 0;
+}
