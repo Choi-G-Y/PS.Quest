@@ -45,15 +45,36 @@ overflow: auto;
     /* 박스 내부 글 색 */
     width: 400px;
     padding: 50px;
-    /* 박스 테두리와 글의 거리 */
-    border: 20px solid rgb(45, 104, 192);
+    /* 박스 테두리와 글의 거리 (top, bottom, right, left 사용 가능)
+      축약형으로 사용할땐 padding: top, right, bottom, left 순)
+      축약할땐 top, right / left, bottom 으로 축약된다.*/
     margin: 50px;
     /* 박스 테두리와 외부 아이템과의 거리 */
+    border: 20px solid rgb(45, 104, 192);
+    outline-style: 15px dashed rgb(21, 21, 61) ;
  }
 
  .mgpdBox {
     width: 320px;
     padding: 10px;
     margin: 5px;
-    border: 2px solid black;
+    border: 4px outset black;
+ }
+
+ .Snag{
+   width:350px;
+   height:250px; 
+   margin:5px;
+   opacity: 0.3;
+ }
+ .Snag:hover{
+   opacity: 1.0;
+ }
+
+ .fixedLoc{
+   border: 2px solid #B8860B;
+   width: 150px;
+   position: fixed;
+   top: 0;
+   right: 0;
  }
