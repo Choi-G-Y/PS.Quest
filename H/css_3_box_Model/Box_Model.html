@@ -8,9 +8,44 @@
 
 </head>
 <body>
-    
+    <p class="Box">300px, 100px 박스</p>
+	<p>박스 아닌것</p>
+	<pre>----------------------------------</pre>
+
+	<h1>Max(Min)-width와 그냥 width의 차이</h1>
+
+	<p class="AutoMaxbox">Max-width 800준 박스</p>
+
+	<p class="Maxbox">그냥 width 800준 박스</p>
+
+	<p class="AutoMinbox">Min-width로 500준 박스</p>
+
+	<p class="Minbox">width로 500준 박스</p>
+
+	<h1>max-height 속성</h1>
+	<p>예제를 그대로 들고옴. 내용의 길이가 얼마가 되었든 box의 height길이는 고정</p>
+	
+	<p class="heightBox">이 div 요소는 max-height 속성을 60px로 설정했습니다.<br>
+
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam quis ligula non ligula iaculis semper at vitae ante. Sed condimentum viverra sollicitudin. Phasellus sodales ipsum nec nulla luctus, in luctus ipsum vestibulum.<br> Pellentesque vehicula lectus a ex tincidunt, eget pellentesque nisl posuere.<br> Vestibulum sed purus sapien.<br> Aenean consequat urna sit amet quam pulvinar, in interdum augue volutpat.<br> Donec ex leo, feugiat vel lorem non, blandit venenatis elit.<br> Vestibulum eu erat eget ante consequat iaculis.
+	</p>
+	<pre>----------------------------------</pre>
+	<h1>CSS로 박스 모델링</h1>
+
+	<p class="BoxModel">반야심경의 뜻은 반야바라밀다(반야경)의 심장(心臟)이 되는 핵심을 추린 경전이라는 뜻이다.<br>
+		 그래서 영어로 Heart Sutra라고 한다.<br>
+		  관세음보살의 수행을 사리불(사리자)에게 말해주는 형식이다.<br>
+		   현재 반야심경은 당나라 삼장법사인 현장(玄裝, 602~664)이 번역한 것이다.</p>
 
 
+		   <img src="./상근이.jpg" width="350px" height="250px"><br>
+		   <p class="mgpdBox">
+		   위의 사진은 width 350px, height 250px이다.
+		   padding과 margin은 박스크기를 정할때 매우 조심해야할 부분.
+		   예를 들어 350px의 박스와 크기를 맞출 때 padding과 margin속성 둘다 쓴다면
+			width(원본값) + padding(1) + padding(2) + margin(1) + margin(2)
+			의 값이 350px이 되어야 한다. 이해를 쉽게 하기 위해 아래 사진을 첨부</p>
+			<img src="http://www.tcpschool.com/lectures/img_css_boxsize.png">
     
 </body>
 </html>

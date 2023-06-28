@@ -1,0 +1,59 @@
+.Box{
+    height: 100px;
+    width: 300px;
+    border: 2px solid orange;
+}
+
+/* 반응형웹에서 썼던거 같음 Max와 Min으로 브라우저 크기에 맞게 크기 조절 */
+
+.AutoMaxbox{
+   max-width: 800px;
+    border: 2px solid coral;
+}
+/* Max속성을 준 박스 */
+
+.Maxbox{
+     width: 800px;
+     border: 2px solid coral;
+ }
+ /* 일반 박스 */
+
+ .AutoMinbox{
+    min-width: 500px;
+    border: 2px solid coral;
+}
+/* Min속성을 준 박스 */
+
+ .Minbox{
+    width: 500px;
+    border: 2px solid coral;
+}
+/* 일반 박스 */
+
+ .heightBox{
+max-height: 60px;
+background-color: greenyellow;
+overflow: auto;
+ }
+ /* overflow 속성으로 여러가지 효과를 보여주기 가능. visible은 딱 지정한 픽셀까지만
+ 박스를 씌우는듯 Auto는 자동으로 스크롤을 만든다. */
+
+ .BoxModel {
+    background-color: cornflowerblue;
+    /* 박스의 메인 색 */
+    color: white;
+    /* 박스 내부 글 색 */
+    width: 400px;
+    padding: 50px;
+    /* 박스 테두리와 글의 거리 */
+    border: 20px solid rgb(45, 104, 192);
+    margin: 50px;
+    /* 박스 테두리와 외부 아이템과의 거리 */
+ }
+
+ .mgpdBox {
+    width: 320px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid black;
+ }
