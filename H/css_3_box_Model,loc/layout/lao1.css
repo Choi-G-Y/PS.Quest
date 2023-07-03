@@ -49,8 +49,8 @@ body{
 }
 /* 바디 기본 틀 */
 .body-container {
-    width: 700px;
-    height: 900px;
+    width: 900px;
+    height: 1100px;
     background-color: rgb(235, 232, 232);
     padding: 20px;
     display: flex;
