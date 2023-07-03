@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin : 0;
+        }
+
+        .default-border {
+            border: 3px solid black;
+            box-sizing: border-box;
+        }
+
+        .body { 
+            width: 1000px;
+        }
+
+        .center { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="body" style="width: 700px; height: 900px; background-color: antiquewhite; padding: 20px; 
+    box-sizing: border-box; display: flex; flex-direction: column;">
+        <header class="default-border" style="width: 100%; height: 20%; background-color: aquamarine; margin-bottom: 20px; 
+        display: flex; justify-content: space-around; align-items: center;">
+            <span>1차</span>
+            <span>1차</span>
+            <span>1차</span>
+            <span>1차</span>
+        </header>
+
+        <section style="width: 100%; height: 60%; background-color: tomato; margin: 20px 0px; display: flex; gap: 40px;">
+            <nav class="default-border" style="width: 25%; height: 100%; background-color: tan;">nav</nav>
+            <div style="width: 50%; height: 100%; background-color: chartreuse;">
+                <div style="width: 100%; height: calc(100% / 3); background-color: slateblue; display: flex; padding: 20px; 
+                box-sizing: border-box; gap: 40px;">
+                    <div style="width: 50%; height: 100%; background-color: turquoise; display: flex; align-items: center; justify-content: center;">
+                        <span>div1</span>
+                    </div>
+                    <div style="width: 50%; height: 100%; background-color: turquoise;">div2</div>
+                </div>
+                <div style="width: 100%; height: calc(100% / 3 * 2); background-color: seagreen; display: flex; gap : 40px; 
+                padding: 20px; box-sizing: border-box;">
+                    <div style="background-color: red; width: 50%; height: 100%;">div3</div>
+                    <div style="width: 50%; height: 100%; background-color: violet; display: flex; flex-direction: column; gap: 40px;">
+                        <span style="background-color: blue; width: 100%; height: 50%;">span1</span>
+                        <div style="background-color: green; width: 100%; height: 50%;">div3</div>
+                    </div>
+                </div>
+                <!-- <div style="width: 100%; height: calc(100% / 3 * 2); background-color: seagreen; 
+                display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 40px; padding: 20px; box-sizing: border-box;">
+                    <div style="background-color: red; grid-row-start: 1; grid-row-end: 3;">div3</div>
+                    <span style="background-color: blue;">span1</span>
+                    <div style="background-color: green;">div3</div>
+                </div> -->
+            </div>
+            <aside class="default-border" style="width: 25%; height: 100%; background-color: cornflowerblue;">aside</aside>
+            <!-- <nav style="width: calc(25% - 20px); height: 100%; background-color: tan;">4</nav>
+            <div style="width: calc(50% - 40px); height: 100%; background-color: chartreuse;">5</div>
+            <aside style="width: calc(25% - 20px); height: 100%; background-color: cornflowerblue;">6</aside> -->
+        </section>
+
+        <footer class="default-border center" style="width: 100%; height: 20%; background-color: blueviolet; margin-top: 20px;">footer</footer>
+    </div>
+</body>
+</html>
