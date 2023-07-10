@@ -2,11 +2,30 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    
+
+
 
     <title>외부에서 js를 불러오는 기능을 사용하며 js연습</title>
-    <script src="./myScript.js"></script>
+
+
 </head>
 <body>
-    <p id="call">외부 js연습</p>
+    <p id="call">외부 링크</p>
+    <button type="button" onclick="loadscript()">외부 js불러오기</button>
+
+    <h2>외부 스크립트에서 계산해서 불러오기</h2>
+    <p>내 나이는</p>
+    <p id="age"></p> 
+    <!-- 이런식으로 쓴다면 element가 들어갈곳이 만들어지지 않았는데 element를 찾으니
+    null 값으로 반환이 된다. 즉시 실행하는 dom에 접근해야하는 상황이 되었을때는 script를
+    body가 끝나기 직전에 script를 써주는것이 좋다. script를 head에 넣었을때는 null경고가 떴지만
+    body마지막부분으로 옮기니 오류가 사라졌음.-->
+
+    <h3>document.write를 쓸 경우</h3>
+    <p>document.write를 쓸 경우 기존 html이 모두 삭제되니 유의할 것.</p>
+    <button type="button" onclick="document.write('write가 작동되어 html이 삭제되었습니다.')">write작동</button>
+
+<script src="myScript.js"></script>
 </body>
 </html>
