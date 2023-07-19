@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JS DOM</title>
+</head>
+<body>
+    <h2>DOM - HTML 요소 : ID</h2>
+    <br>
+    <p id="intro">이것은  intro라는 아이디가 콜 되면 나오는 글입니다.</p>
+    <p id="CallIntro"></p>
+    <br><br>
+    <h2>DOM - HTML 요소 : Tag</h2>
+    <br>
+    <!-- 지금까지 <p>가 사용된 순서를 적어서 불러올 태그를 선택 할 수 있다. -->
+    <p>이게 불러지나? 1</p>
+    <p>이게 불러지나? 2</p>
+    <p id="TagCall"></p>
+    <p>document.getElementById("")로 범위를 지정한 후에 TagName을 사용할 수 도 있다.</p>
+    <br><br>
+    <!-- classIntro를 id가 아닌 class를 사용하여 다중선언을 했음. -->
+    <h2>query select를 이용하여 요소 찾기</h2>
+    <p class="ClassIntro">클래스 인트로 1</p>
+    <p class="ClassIntro">클래스 인트로 2</p>
+    <p id="Q_S_Change"></p>
+    <br><br><br>
+    <!--  -->
+    <h2>HTML elements를 이용허여 </h2>
+    <form id="frm1" action="/action_page.php">
+        First name: <input type="text" name="fname" value=""><br>
+        Last name: <input type="text" name="lname" value=""><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>이 형식의 요소값 입니다.</p>
+    <p id="form_element"></p>
+
+
+
+
+    <script src="Dom.js"></script>
+</body>
+</html>
