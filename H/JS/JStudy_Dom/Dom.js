@@ -17,3 +17,9 @@ const query_select = document.querySelectorAll("p.ClassIntro");
 
 document.getElementById("Q_S_Change").innerHTML = '이번에는 다중선택을 하며 여러가지' +
     '속성이 일치하는것을 불러옵니다.' + query_select[0].innerHTML;
+
+const hd_element = document.getElementById("id01");
+hd_element.innerHTML = "New Heading";
+
+// Date로 현재시간 나타내기
+document.getElementById("Date_now").innerHTML = Date();
