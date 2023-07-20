@@ -28,7 +28,19 @@
         <h1 id="id01">Old Heading</h1>
         <p>old headind의 id01을 hd_element로 지정한 후 hd_element을 New Heading으로 바꿈.</p>
     <br><br>
-    
+    <!-- 유효성 검사 -->
+    <h2>JavaScript 양식 유효성 검사</h2>
+
+    <form name="testForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        이름: <input type="text" name="fname">
+        <input type="submit" value="확인">
+    </form>
+
+
+    <h2>JavaScript 양식 유효성 검사 - 2 응용: 1~10까지의 수만 받아들인다.</h2>
+    <input id="NubTest">
+    <button type="button" onclick="NumtestFunction()">검사</button>
+    <p id="유효숫자 테스트"></p>
 
 
 

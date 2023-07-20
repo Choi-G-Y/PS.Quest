@@ -23,3 +23,26 @@ hd_element.innerHTML = "New Heading";
 
 // Date로 현재시간 나타내기
 document.getElementById("Date_now").innerHTML = Date();
+
+// 유효성 검사
+function validateForm() {
+    let x = document.forms["testForm"]["fname"].value;
+    if (x == "") {
+        alert("이름은 반드시 입력해야 합니다.");
+        return false;
+        // 리턴값을 true을 준다면 action_page로 넘어가진다.
+    }
+}
+
+// 유효성 검사2
+function NumtestFunction() {
+    let Numt = document.getElementById("NubTest").value;
+    let text;
+    if (isNaN(Numt) && Numt >= 1 && Numt <= 10) {
+        text = "유효성 검사 통과";
+    } else {
+        text = "유효성 검사 불통과";
+    }
+    document.getElementById("유효숫자 테스트").innerHTML = text;
+}
+// 흠 왜안될까
