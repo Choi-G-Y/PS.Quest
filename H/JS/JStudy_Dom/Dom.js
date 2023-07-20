@@ -46,22 +46,10 @@ function validateForm() {
     document.getElementById("유효숫자 테스트").innerHTML = text;
 }*/
 // 흠 왜안될까 좀 더 직관적으로 이름을 바꿔서 해봐야겠음.
-// 유효성 검사2 mk.2(&&를 잘못사용)
+// 유효성 검사2 mk.2(&&를 사용했을때 비교하는 방법을 잘못씀. 이후 수정하면서 
+// isNaN의 기능을 잘못 생각한 덕분에 엄청난 오류)
 /*function NumtestFunction() {
     let Numx = document.getElementById("TestNum").value;
-    let text;
-    if (isNaN(Numx) && Numx < 0 && Numx > 11) {
-        text = "유효성 검사 통과";
-    } else {
-        text = "유효성 검사 불통과";
-    }
-    document.getElementById("유효숫자 테스트").innerHTML = text;
-}*/
-//(굳이 &&를 사용하겠다면 이것이 맞다.)
-function NumtestFunction() {
-    // Get the value of the input field with id="numb"
-    let Numx = document.getElementById("TestNum").value;
-    // If x is a Number and greater than or equal to 1 and less than or equal to 10
     let text;
     if (!isNaN(Numx) && Numx >= 1 && Numx <= 10) {
         text = "유효성 검사 통과";
@@ -69,19 +57,30 @@ function NumtestFunction() {
         text = "유효성 검사 불통과";
     }
     document.getElementById("유효숫자 테스트").innerHTML = text;
-}
+}*/
 // ||를 사용하는것이 더 편하다.
-/*function NumtestFunction() {
+function NumtestFunction() {
     // Get the value of the input field with id="numb"
     let Numx = document.getElementById("TestNum").value;
     // If x is Not a Number or less than one or greater than 10
     let text;
     if (isNaN(Numx) || Numx < 1 || Numx > 10) {
-        text = "Input not valid";
+        text = "유효성 검사 불통과";
     } else {
-        text = "Input OK";
+        text = "유효성 검사 통과";
     }
     document.getElementById("유효숫자 테스트").innerHTML = text;
-}*/
+}
 
 // 유효성 검사 2 끝 생각보다 길게 나왔다 실패한 케이스가 생각보다 많이 나온경우.
+
+// 시험 - a가 1보다 작을 때 hello 텍스트 출력을 가능한 짧게 구현.
+
+function TestFunction() {
+    let a = document.getElementById("fieldNum").value;
+    if (isNaN(a) || a < 1) {
+        alert('Hello World');
+    } else {
+        alert('해당하는 범위가 아닙니다.')
+    }
+}

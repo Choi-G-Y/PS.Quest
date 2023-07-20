@@ -29,15 +29,15 @@
         <p>old headind의 id01을 hd_element로 지정한 후 hd_element을 New Heading으로 바꿈.</p>
     <br><br>
     <!-- 유효성 검사 -->
-    <h2>JavaScript 양식 유효성 검사</h2>
+    <h2>JavaScript유효성 검사1(required속성 추가)</h2>
 
     <form name="testForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-        이름: <input type="text" name="fname">
+        이름: <input type="text" name="fname" required>
         <input type="submit" value="확인">
     </form>
 
 
-    <h2>JavaScript 양식 유효성 검사 - 2 응용: 1~10까지의 수만 받아들인다.</h2>
+    <h2>JavaScript유효성 검사 - 2 응용: 1~10까지의 수만 받아들인다.</h2>
     <!--<input id="TestNum">
     <button type="button" onclick="NumtestFunction()">검증</button>
     <p id="유효숫자 테스트"></p> -->
@@ -46,10 +46,17 @@
     <button type="button" onclick="NumtestFunction()">Submit</button>
 
     <p id="유효숫자 테스트"></p>
+    <br><br><br>
+    <h2>양식 유효성 검사</h2>
+    <p>매우 간단한 기능이다. 필드가 비어있을 시 required속성으로 양식제출이 되지 않음.
+        이 기능을 위 유효성 검사1 기능에 추가해보자 한다.
+    </p>
 
+    <p><a href="https://www.w3schools.com/js/js_validation.asp">유효성 검사 관련 수업자료</a></p>
 
-
-
+    <h2>시험: a가 1보다 작을 때 hello 텍스트 출력을 가능한 짧게 만들어보시오.</h2>
+    <input id="fieldNum">
+    <button type="button" onclick="TestFunction()">시험</button>
 
     <script src="Dom.js"></script>
 </body>
