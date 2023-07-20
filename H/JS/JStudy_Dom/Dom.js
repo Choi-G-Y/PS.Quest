@@ -84,3 +84,9 @@ function TestFunction() {
         alert('해당하는 범위가 아닙니다.')
     }
 }
+document.getElementById("fieldNum").value;
+if ("fieldNum" || a < 1) {
+    alert('Hello World');
+} else {
+    alert('해당하는 범위가 아닙니다.')
+}
