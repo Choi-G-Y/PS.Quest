@@ -1,0 +1,14 @@
+/* 애니메이션 배경 */
+#container{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: seagreen;
+}
+/* 애니메이션 움직일 캐릭터 */
+#animate{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: lightgreen;
+}
