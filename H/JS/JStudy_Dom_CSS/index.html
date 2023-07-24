@@ -10,15 +10,35 @@
     <p id="p1">p1 CSS를 바꿔봅시다</p>
     <button type="button" onclick="ColorFunction()">p1 파란색</button>
     <br><br>
+
     <h2>애니메이션 실행</h2>
     <p></p>
     <p><button onclick="myMove()">Zion_T : Click me</button></p>
     <div id="container">
         <div id="animate"></div>
     </div>
+    <br><br>
 
+    <h2>클릭 시 요소의 콘텐츠 변경</h2>
+    <p onclick="this.innerHTML='요소 변경 완료'">'this.inner'를 이용한클릭시 글 내용 변경</p><br>
+    <p onclick="changeTextFunction(this)">'function(this)'를 이용한클릭시 글 내용 변경</p>
+    <br><br>
+    <h2>클릭 시 날짜(Date) 표시</h2>
+    <button onclick="TodayDate()">현재 시간은?</button>
+    <p id="getDate"></p>
+    <br><br>
+
+    <h2>온체인지로 내용 강제 변경</h2>
+    성을 영어로 기입해주세요: <input type="text" id="fname" onchange="upperCase()">
+    <br><br>
+
+    <h2>onmouse속성을 이용한 이벤트</h2>
+    <p>첫번째는 onmouseover와 out를 이용한 이벤트를 만들어 볼것.</p>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="test_cont">마우스를 올려보세요</div>
+    <br>
+    <p>두번째는 onmousedown 과 mouseup를 이용한 이벤트를 만들어 볼것.</p>
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)" class="test_cont">클릭해보세요</div>
     
-
 
 
     <script src="DOM_CSS.js"></script>
