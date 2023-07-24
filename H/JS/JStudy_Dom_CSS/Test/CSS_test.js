@@ -16,8 +16,8 @@ stopButton.addEventListener('click', () => {
 function startRotation() {
     square.classList.add('rotating');
     rotationInterval = setInterval(() => {
-        rotateSquare(1); // 회전 각도를 원하는 값으로 변경 가능 (1은 1도씩 회전)
-    }, 500); // 0.5초마다 회전
+        rotateSquare(1);
+    }, 500);
 }
 
 function stopRotation() {
